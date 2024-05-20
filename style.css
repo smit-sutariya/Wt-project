@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body{
+   
+font-family: 'Montserrat', sans-serif;
+line-height: 1.7;
+
+}
+ul li{list-style: none;}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p ,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+}
+
+/* ################utiliti class############## */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ss{color: white;
+    font-size: bolder;    
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+     }
+.lg-heading:hover::first-letter{font-size: 60px;}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: #fc6603;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333333;
+}
+.text-grey{
+    color: #555;
+
+}
+.bg-dark{
+    background-color: #263238;
+    color: #f4f4f4;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+    
+}
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+}
+.btn-primary:hover{
+    background-color: #333333;
+}
+.btn-secondary{
+    border:2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background-color: #fff;
+}
+.btn-secondary:hover{
+    background-color: #555;
+}
+
+
+
+
+/* ################ header decoration ################## */
+
+
+.nav-bar{padding: 1rem;}
+.nav-bar a{
+    padding-bottom: 0.3rem ;
+}
+.nav-bar a:hover{
+    border-bottom: 0.1rem solid #fc6603;
+    color: #fc6603;
+
+}
+
+.header{
+    position: relative;
+    height: 95vh;
+    background: url(./image/home/hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.logo,
+.nav-bar a{
+    color: white;
+    
+}
+ .logo{ 
+    float: left;
+    
+    
+}
+.logoy{
+    color:#fc6603;
+    font-weight: bolder;
+}
+
+
+.nav-bar .nav-items
+{
+    float: right;
+    margin-top: 1rem;
+}
+.nav-bar .nav-item{
+display: inline-block;
+padding: 1rem;
+text-transform: uppercase;
+
+}
+.nav-bar::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+/* ######################### header content styling ################# */
+.header-content{
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) ;
+}
+.header-content h1{
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+.header-content p{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* ############## showcash section styling############## */
+.showcash{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height:35rem;
+   background-color: #fff;
+   box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row1{
+    margin-bottom: 10rem;
+    
+
+}
+.row1 .img-box,.row2 .text-box{
+    float:left;
+    width:50%;
+}
+.row2 .img-box,.row1 .text-box{
+    float:right;
+    width:50%;
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    padding: 3rem;
+}
+.row .img-box img{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.row::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/* ############### future section styling ########## */
+.features{
+    padding: 10rem 0;
+}
+.box-wreper{
+    box-shadow: 5px 5px 20px 0px rgb(0, 0, 0,0.37);
+    
+}
+.box{
+    padding:2rem ;
+    width:33.33333% ;
+    float: left;
+    text-align: center;
+}
+.box-wreper::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+.box-1 ,.box-3{
+    background-color:#263238 ;
+    color: #fff;
+}
+.box-2{
+    background: linear-gradient(to bottom, #ff0000 0%, #cc0066 68%);
+    color: #fff;
+}
+
+/* ###################### footer styling ############## */
+.footer{
+    background-color: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.social-media-link i{
+margin: 2rem;
+}
+
+/* #################### about us styling ################## */
+.about{
+    padding: 5rem 0;
+}
+.about-heading::after{
+    content: "";
+    border: 3px solid #e63946;
+    width: 100%;
+    display: block;
+}
+
+/* ##################### about wrapper styling################# */
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;}
+
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}    
+.about-wrapper li::before{
+    content: "\2713";
+    color: #e63946;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+
+/* ################# count styling ############ */
+.count{margin-top: 3rem;
+    
+}
+.count-item{
+    width:25%;
+    float: left;
+    text-align: center;
+    
+}
+.count::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.count-item span{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e63946;
+}
+.count-item p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ################ banner styling ############ */
+.cta-banner{
+    background: linear-gradient(to bottom, #ff0000 0%, #cc0066 68%);
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 10pc #00000091;
+    margin-top: 3rem;
+}
+.cta-banner-left{
+    float: left;
+width: 60%;
+}
+.cta-banner-right{
+    float: right;
+    width:40%;
+    text-align: right;
+}
+.cta-line{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.btn-cta{
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 4px solid white;
+    text-align: center;
+    padding: 0.3rem 2.5em;
+    letter-spacing: 0.5rem;
+    color: white;
+
+}
+.cta-banner::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ################# contect form styling ########## */
+.contect-form{
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.form-wrapper .company-address{
+    height: 760px;
+    width: 49%;
+    float: left;
+background-color: #fff;
+padding: 1rem;
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 35rem;
+    object-fit: cover;
+}
+i:hover{color: #fc6603;}
+button:hover{color: yellowgreen;}
+
+
+
+/* ############### form style ############## */
+.form-wrapper .form{
+    height:760px ;
+    width: 49%;
+    float: right;
+ background-color: #fff; 
+ font-size: 1.6rem; 
+ padding: 1rem; 
+}
+.form h1::after{
+    content: '';
+    display: block;
+    width: 98%;
+    border: 3px solid #ee4758;
+}
+.form-wrapper .form-group label{
+    display: block;
+}
+.form-wrapper .form-group input{
+    padding:0.5rem;
+    width: 100%;
+}
+.form-wrapper .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form-group label::after{
+    content: '*';
+    color: #e63946;
+}
+.form-wrapper .form-group textarea{
+    width:100%;
+    height: 300px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* #################### media quries ############ */
+
+
+@media(max-width:500px){
+    html{
+        font-size: 8px;
+    }
+    .nav-bar .nav-items ,.nav-bar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    } 
+    .header-content .main-heading{
+        display: none;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        }
+        .features .box{
+            float: none;
+            width: 100%;
+            text-align: center;
+            box-shadow: 5px 5px 10px 0px rgb(0, 0, 0,0.37);
+          }
+          .features .box-2,
+          .features .box-3{
+              margin-top: 7rem;
+          }
+          .box-wreper{
+            box-shadow:none;
+    
+          }
+          .cta-banner-left,
+          .cta-banner-right{
+              float: none;
+              width: 100%;
+              text-align: center;
+          }
+          .form-wrapper .company-address{
+              float: none;
+              width: 100%;
+              height: auto;
+              margin-bottom: 5rem;
+          }
+          .form-wrapper .form{
+              float: none;
+              width: 100%;
+              height: auto;
+
+          }}
+          @media(min-width:500px)and(max-width:768px){
+            html{
+                font-size: 8px;
+            }
+            p{
+                font-size: 1.8rem;
+            }
+            .nav-bar .nav-items ,.nav-bar .logo{
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: center;
+            } 
+            
+            }
+            .row{
+                height: auto;
+                width: 100%;
+            }
+            .row .img-box,
+            .row .text-box{
+                float: none;
+                width: 100%;
+                text-align: center;
+                }
+                .features .box{
+                    float: none;
+                    width: 100%;
+                    text-align: center;
+                    box-shadow: 5px 5px 10px 0px rgb(0, 0, 0,0.37);
+                  }
+                  .features .box-2,
+                  .features .box-3{
+                      margin-top: 7rem;
+                  }
+                  .box-wreper{
+                    box-shadow:none;
+            
+                  }
+                  .cta-banner-left,
+                  .cta-banner-right{
+                      float: none;
+                      width: 100%;
+                      text-align: center;
+                  }
+                  .form-wrapper .company-address{
+                      float: none;
+                      width: 100%;
+                      height: auto;
+                      margin-bottom: 5rem;
+                  }
+                  .form-wrapper .form{
+                      float: none;
+                      width: 100%;
+                      height: auto;
+                      
+                  }
+                  @media (min-width:769px)and(max-width:1200px)
+                  {
+                      html {
+                          font-size: 56.25%
+        
+                      };
+                  }
+                  @media(orientation:landscape) and (max-height:500px){
+                      .header{
+                          height: 90vmax;
+                      }
+                  }
+                
+        
+
